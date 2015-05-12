@@ -1,3 +1,12 @@
+# Function to detect if the package is installed
+function npm_package_is_installed {
+    if [ $(npm list --depth 0 --parseable true "${2}" | grep "${1}$") ]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
 # First make sure tsd is installed
 if ! type tsd &> /dev/null ; then
     # Check if it is in repo
