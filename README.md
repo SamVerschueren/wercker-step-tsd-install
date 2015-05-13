@@ -2,12 +2,12 @@
 
 > A Wercker step for installing TypeScript definitions
 
-Executes the command `tsd reinstall`.
+Executes the command `tsd reinstall --save --overwrite`.
 
 ## Usage
 
 ```
-- tsd-install
+- samverschueren/tsd-install
 ```
 
 ## Author

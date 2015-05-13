@@ -29,7 +29,7 @@ fi
 
 # Reinstall the tsd files
 set +e
-$tsd_command reinstall
+$tsd_command reinstall --save --overwrite
 result="$?"
 set -e
 
